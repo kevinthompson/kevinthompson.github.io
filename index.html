@@ -1,40 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Kevin Thompson">
+---
+layout: default
+---
+<section id="one">
+  <header class="major">
+    <h2>Made By Kevin</h2>
+  </header>
+  <p>
+    Below is a collection of my recent work including websites,
+    mobile applications, presentations, and games. If you have a project
+    you'd like to collaborate on, contact me at
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+  </p>
+</section>
 
-    <title>Websites, Applications and Games | Made By Kevin</title>
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      try {
-        var pageTracker = _gat._getTracker("UA-24584832-2");
-        pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
-  </head>
-  <body>
-    <div class="container" id="header">
-      <div class="row">
-        <img src="/images/avatar.png" class="center-block" width="256" alt="Kevin Thompson" />
-      </div>
-      <div class="row">
-        <h1 class="text-center">Made By Kevin</h1>
-      </div>
-    </div>
-
-    <script src="//code.jquery.com/jquery-latest.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="/javascripts/application.js"></script>
-  </body>
-</html>
+{% include projects.html %}
+{% include form.html %}

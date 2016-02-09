@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{ site.name }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="{{ site.avatar }}" />
+  </head>
+  <body id="top">
+    <header id="header">
+      <a href="{{ site.url }}" class="image avatar"><img src="{{ site.avatar }}" alt="" /></a>
+      <h1>
+        <strong>I am Kevin Thompson</strong>; developer, speaker,<br />
+        gamer, husband, and father of two<br />
+        beautiful little girls.
+      </h1>
+    </header>
+
+    <div id="main">
+      {{ content }}
+    </div>
+
+    <footer id="footer">
+      <ul class="icons">
+        {% for link in site.links %}
+        <li>
+          <a href="{{ link.url }}" class="icon fa-{{ link.icon }}" title="{{ link.title }}">
+            <span class="label">
+              {{ link.title }}
+            </span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="copyright">
+        <li>&copy; {{ site.name }}</li><li>Design By <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
